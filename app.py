@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/185P4d-8q82dQGAlZ0nLYrTkz9LlY8kbq
 """
 
-!pip install streamlit
-
 """
 Session 4: Streamlit Dashboard Complete
 Dashboard RUP 2025 - Production Ready
