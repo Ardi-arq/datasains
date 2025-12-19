@@ -26,7 +26,7 @@ from pathlib import Path
 # PAGE CONFIG
 # ========================================
 st.set_page_config(
-    page_title="Dashboard RUP 2025 - Complete",
+    page_title="Dashboard RUP 2025",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
