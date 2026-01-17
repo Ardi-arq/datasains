@@ -52,17 +52,14 @@ st.markdown("""
 # ========================================
 @st.cache_data(ttl=3600)  # Cache for 1 hour
 def load_data():
-    """Load RUP data with caching"""
     project_root = Path.cwd()
-    data_path = project_root / 'Students-Social-Media-Addiction'
+    data_path = project_root / 'Students-Social-Media-Addiction.csv'
 
     if not data_path.exists():
         st.error(f"Dataset not found at {data_path}")
         st.stop()
 
-    df = pd.read_parquet(data_path)
-    # Convert date column
-    df['tgl_pengumuman_paket'] = pd.to_datetime(df['tgl_pengumuman_paket'])
+    df = pd.read_csv(data_path)
     return df
 
 # Load data with progress
